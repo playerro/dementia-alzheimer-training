@@ -34,3 +34,8 @@
       <br>
       Мой telegram: <a href="https://www.t.me/playerro">&#64;playerro</a>
     </p>
+
+### Build command
+```
+ng build --output-path docs --base-href "/dementia-alzheimer-training/"
+```
