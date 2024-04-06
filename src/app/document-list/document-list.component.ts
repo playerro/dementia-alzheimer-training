@@ -88,7 +88,8 @@ export class DocumentListComponent implements AfterViewInit, OnInit {
 
   private getLink(index: number, format: string) {
     let baseUrl = (isDevMode())? '' :  dataConfig.baseUrl;
-    return baseUrl + this.assetsDocs + this.getDocumentName(index) + format;
+    let assetsDocs = (format === '.docx') ? this.assetsDocs : this.assetsPdf;
+    return baseUrl + assetsDocs + this.getDocumentName(index) + format;
   }
 
   /** Announce the change in sort state for assistive technology. */
