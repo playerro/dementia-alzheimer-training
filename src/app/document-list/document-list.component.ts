@@ -15,6 +15,7 @@ import {
 import {MatSort, MatSortHeader, Sort} from "@angular/material/sort";
 import {LiveAnnouncer} from "@angular/cdk/a11y";
 import {dataConfig} from "../data-config";
+import { isDevMode } from '@angular/core';
 
 @Component({
   selector: 'app-document-list',
@@ -76,13 +77,18 @@ export class DocumentListComponent implements AfterViewInit, OnInit {
       this.documentsData.push({
         name: this.getDocumentName(i),
         position: i,
-        docxLink: this.assetsDocs + this.getDocumentName(i) + '.docx',
-        pdfLink: this.assetsPdf + this.getDocumentName(i) + '.pdf',
+        docxLink: this.getLink(i, '.docx'),
+        pdfLink:  this.getLink(i, '.pdf'),
       });
     }
   }
   private getDocumentName(index: number){
     return this.documentBaseName + index;
+  }
+
+  private getLink(index: number, format: string) {
+    let baseUrl = (isDevMode())? '' :  dataConfig.baseUrl;
+    return baseUrl + this.assetsDocs + this.getDocumentName(index) + format;
   }
 
   /** Announce the change in sort state for assistive technology. */
