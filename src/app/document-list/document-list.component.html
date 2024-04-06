@@ -1,0 +1,49 @@
+<mat-card class="document-card">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>Документы с готовыми упражнениями</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      На данной странице вы можете скачать готовые документы с когнитивными упражнениями, которые я сделал для наших занятий.
+    </p>
+    <p>Доступны два формата: .docx и .pdf. Если ваш бразуер поддерживает просмотр pdf, можно также просматривать содержимое документов без скачивания</p>
+    <div>
+      <h2>Упражнения: </h2>
+      <div class="document-table">
+        <div class="mat-elevation-z8">
+          <mat-table [dataSource]="dataSource" matSort (matSortChange)="announceSortChange($event)" matSortActive="position" matSortDirection="desc">
+            <ng-container matColumnDef="position">
+              <mat-header-cell *matHeaderCellDef mat-sort-header sortActionDescription="Сортировка по номеру" >№</mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.position}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="name">
+              <mat-header-cell *matHeaderCellDef>Название</mat-header-cell>
+              <mat-cell *matCellDef="let element"> {{element.name}} </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="docxLink">
+              <mat-header-cell *matHeaderCellDef>Формат .DOCX</mat-header-cell>
+              <mat-cell *matCellDef="let element"><a href="{{element.docxLink}}" target="_blank">Скачать .docx</a> </mat-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="pdfLink">
+              <mat-header-cell *matHeaderCellDef>Формат .PDF</mat-header-cell>
+              <mat-cell *matCellDef="let element"><a href="{{element.pdfLink}}" target="_blank">Скачать .pdf</a> </mat-cell>
+            </ng-container>
+
+            <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+            <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+          </mat-table>
+
+          <mat-paginator [pageSizeOptions]="[5, 10, 20]"
+                         [pageSize]="20"
+                         showFirstLastButtons="true"
+                         aria-label="Select page of periodic elements">
+          </mat-paginator>
+        </div>
+      </div>
+    </div>
+  </mat-card-content>
+</mat-card>

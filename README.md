@@ -1,27 +1,36 @@
-# DementiaAlzheimerTraining
+# Alzheimer Dementia Training
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
+В данном проект я выкладываю когнитивные упражнения для людей с деменцией, которые я делаю для занятий со своей мамой.
 
-## Development server
+## About
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ <p>
+      Доброго времени суток, меня зовут Владимир. В ноябре 2022 года моей маме Татьяне Федоровне поставили диагноз - деменция (болезнь Альцгеймера).
+    </p>
+    <p>
+      Помимо приема лекарств, врач прописал каждодневные <strong>когнитивные упражнения</strong> - занятия для тренировки и поддержания памяти и когнитивных навыков.
+      С тех пор, уже больше года, каждый день я составляю упражнения для мамы и мы упорно ими занимаемся, борясь с этой страшной болезнью.
+    </p>
+ <p>
+      За время занятий у меня накопилось более 300 документов с упражнениями, которыми я бы хотел поделиться.
+      Поиск и составление разнообразных упражнений занимает время, здесь вы сможете скачать уже готовые упражнения из моего архива, или найти полезные ссылки для составления своих
+    </p>
+    <p><strong>Важно!</strong> Данные упражнения не заменяют лечение, не являются врачебной рекоммендацией и помимо письменных упражнений мы занимаемся физической зарядкой, прогулками и т.д.</p>
+    <p>
+      На этом ресурсе вы сможете найти:
+    </p>
+    <ul>
+      <li>Список готовых упражнений (пополняемый архив)</li>
+      <li>Отдельные упражнения - из которых можно составить свои упражнения</li>
+      <li>Ссылки на источники, где я беру упражнения</li>
+      <li>Поддержать нашу семью, выразить благодарность</li>
+      <li>Страница с контактами для связи</li>
+  </ul>
+ <p><strong>Поддержать, выразить благодарность через пожертвование средств: </strong> <a href="https://yoomoney.ru/to/410011073392792"
+                                                                          target="blank">Ссылка</a></p>
+    <p>Мы будем благодарны за любую поддержку! </p>
+    <p>
+      Моя почта: <a href="mailto:playerro@yandex.ru">playerro&#64;yandex.ru</a>
+      <br>
+      Мой telegram: <a href="https://www.t.me/playerro">&#64;playerro</a>
+    </p>
