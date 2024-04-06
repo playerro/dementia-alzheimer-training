@@ -37,6 +37,8 @@
           },
           "configurations": {
             "production": {
+              "baseHref": "/dementia-alzheimer-training/",
+              "deployUrl": "/dementia-alzheimer-training/",
               "budgets": [
                 {
                   "type": "initial",

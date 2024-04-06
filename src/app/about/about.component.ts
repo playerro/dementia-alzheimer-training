@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import {MatCard, MatCardContent, MatCardHeader, MatCardTitle} from "@angular/material/card";
 import {MatListItem} from "@angular/material/list";
+import {RouterLink} from "@angular/router";
 
 @Component({
   selector: 'app-about',
@@ -10,7 +11,8 @@ import {MatListItem} from "@angular/material/list";
     MatCardHeader,
     MatCardTitle,
     MatCardContent,
-    MatListItem
+    MatListItem,
+    RouterLink
   ],
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss'
